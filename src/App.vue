@@ -33,7 +33,7 @@ export default {
 
       const regex = /^[01]+$/;
       if (regex.test(n1) && regex.test(n2)) {
-        this.result = 'resultado: ' + this.somaBinaria(n1, n2)
+        this.result = 'Resultado: ' + this.somaBinaria(n1, n2)
       } else {
         this.error = "Digite apenas números binários! Ex.: 10101 + 110"
         this.result = ''
