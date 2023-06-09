@@ -34,8 +34,9 @@ export default {
       const regex = /^[01]+$/;
       if (regex.test(n1) && regex.test(n2)) {
         this.result = 'Resultado: ' + this.somaBinaria(n1, n2)
+        this.error = ''
       } else {
-        this.error = "Digite apenas números binários! Ex.: 10101 + 110"
+        this.error = "Digite apenas números binários!"
         this.result = ''
       }
     },
@@ -45,8 +46,6 @@ export default {
       const maiorComprimento = Math.max(binario1.length, binario2.length);
       binario1 = this.adicionarZerosEsquerda(binario1, maiorComprimento);
       binario2 = this.adicionarZerosEsquerda(binario2, maiorComprimento);
-
-      console.log(binario1, binario2)
 
       let resultado = '';
       let carry = 0;
